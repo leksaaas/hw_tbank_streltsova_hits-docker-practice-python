@@ -182,3 +182,6 @@ app-1    | INFO:tornado.access:304 GET /health (151.101.64.223) 0.47ms
 
 v View in Docker Desktop   o View Config   w Enable Watch
 ```
+## После сборки докера
+Можно запустить сайт и потыкать кнопочки
+![Locust results](screen_app.png)
