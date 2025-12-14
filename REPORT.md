@@ -62,7 +62,7 @@ tests/test_handlers.py::TestHandlers::test_root_ok
 ======================== 7 passed, 7 warnings in 1.00s =========================
 (base) a.v.streltsova@macbook-GJTXH6TK7C hw_tbank_streltsova_hits-docker-practice-python %
 Warning DeprecationWarning от fakeredis не влияет на прохождение тестов (не является ошибкой).
-
+```
 ## 4) Нагрузочное тестирование
 
 ### Инструмент
