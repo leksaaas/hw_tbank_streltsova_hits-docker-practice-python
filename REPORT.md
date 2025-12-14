@@ -62,3 +62,31 @@ tests/test_handlers.py::TestHandlers::test_root_ok
 ======================== 7 passed, 7 warnings in 1.00s =========================
 (base) a.v.streltsova@macbook-GJTXH6TK7C hw_tbank_streltsova_hits-docker-practice-python %
 Warning DeprecationWarning от fakeredis не влияет на прохождение тестов (не является ошибкой).
+
+## 4) Нагрузочное тестирование
+
+### Инструмент
+- Locust
+
+### Сценарий
+- GET /health
+- GET /hospital, /doctor, /patient, /diagnosis
+- POST /hospital
+- POST /patient
+
+Сценарий описан в файле `loadtest/locustfile.py`.
+
+### Параметры запуска
+- Number of users: 50
+- Spawn rate: 5 users/sec
+- Duration: ~9 minutes
+
+### Результаты
+- Requests per second (RPS): ~32.8
+- 95th percentile latency (p95): ~1800 ms
+- Error rate: 0%
+
+### Вывод
+Приложение стабильно обрабатывает нагрузку,
+ошибок не обнаружено, задержки находятся в допустимых пределах
+для учебного проекта.
