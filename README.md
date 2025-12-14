@@ -145,3 +145,20 @@ http://localhost:8089
 - tests/ — юнит-тесты (pytest)
 - loadtest/ — сценарии нагрузочного тестирования (Locust)
 - REPORT.md — отчёт по выполненному заданию
+
+## Запуск с использованием Docker
+
+Для запуска приложения в контейнерах требуется установленный Docker.
+
+### Сборка и запуск
+```bash
+docker compose up --build
+```
+Проверка healthcheck:
+```bash
+curl http://localhost:8888/health
+```
+Остановка
+```bash
+docker compose down
+```
