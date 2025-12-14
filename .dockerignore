@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+.git/
+.github/
+.DS_Store
+screen_locust.png
