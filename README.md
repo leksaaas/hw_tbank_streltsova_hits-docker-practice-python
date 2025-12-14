@@ -138,3 +138,10 @@ http://localhost:8089
 - Requests per second (RPS)
 - 95th percentile latency (p95)
 - Error rate
+## Структура проекта
+- main.py — основной файл Tornado-приложения
+- templates/ — HTML-шаблоны
+- static/ — CSS и JavaScript
+- tests/ — юнит-тесты (pytest)
+- loadtest/ — сценарии нагрузочного тестирования (Locust)
+- REPORT.md — отчёт по выполненному заданию
